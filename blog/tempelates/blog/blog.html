@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="blog-container">
+    <h1>My Blog Post</h1>
+    <div class="blog-post">
+        <img src="{{ image }}" alt="Blog image" class="blog-image">
+        <div class="blog-content">
+            <p>{{ blog }}</p>
+        </div>
+    </div>
+    <a href="{% url 'blog:blog' %}" class="btn">Get Another Random Post</a>
+</div>
+{% endblock %}
